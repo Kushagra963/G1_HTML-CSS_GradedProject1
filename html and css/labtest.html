@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="labtest-form">
+            <h2>Book a Lab Test</h2>
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div class="form-group">
+                <label for="patient-id">Patient ID</label>
+                <input type="text" id="patient-id" name="patient-id">
+            </div>
+            <div class="form-group">
+                <label for="contact-number">Contact Number</label>
+                <input type="tel" id="contact-number" name="contact-number" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <h3>Address</h3>
+            <div class="form-group">
+                <label for="house-number">House Number</label>
+                <input type="text" id="house-number" name="house-number" required>
+            </div>
+            <div class="form-group">
+                <label for="street">Street</label>
+                <input type="text" id="street" name="street" required>
+            </div>
+            <div class="form-group">
+                <label for="area">Area</label>
+                <input type="text" id="area" name="area" required>
+            </div>
+            <div class="form-group">
+                <label for="district">District</label>
+                <select id="district" name="district" required>
+                    <option value="">Choose</option>
+                    <option value="District1">District1</option>
+                    <option value="District2">District2</option>
+                    <!-- Add more districts as needed -->
+                </select>
+            </div>
+
+            <h3>Choose the Test Type</h3>
+            <div class="form-group">
+                <input type="checkbox" id="cbc" name="test-type" value="CBC">
+                <label for="cbc">CBC</label>
+                <input type="checkbox" id="complete-urine" name="test-type" value="Complete Urine">
+                <label for="complete-urine">Complete Urine</label>
+                <input type="checkbox" id="lipid-profile" name="test-type" value="Lipid Profile">
+                <label for="lipid-profile">Lipid Profile</label>
+                <input type="checkbox" id="tsh" name="test-type" value="TSH">
+                <label for="tsh">Thyroid Stimulating Hormone(TSH)</label>
+                <input type="checkbox" id="glucose-test" name="test-type" value="Glucose Test">
+                <label for="glucose-test">Glucose Test</label>
+                <div id="test-type-error" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Do you want a hard copy of the report also?</label>
+                <input type="radio" id="hardcopy-yes" name="hardcopy" value="Yes">
+                <label for="hardcopy-yes">Yes</label>
+                <input type="radio" id="hardcopy-no" name="hardcopy" value="No">
+                <label for="hardcopy-no">No</label>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Select Your Comfortable Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Select Your Comfortable Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div class="form-group">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <img src="images/labtest.jpg" alt="Lab Test Image" class="fixed-image">
+    </div>
+</body>
+</html>
